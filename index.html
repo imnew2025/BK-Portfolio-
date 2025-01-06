@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Badal Kumar - Accounting Professional</title>
+  <style>
+    /* Google Fonts and Material Icons */
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+    @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+    /* Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    :root {
+      --bg-light: #f9f9f9;
+      --text-light: #333;
+      --highlight-light: #007bff;
+      --card-bg-light: #ffffff;
+
+      --bg-dark: #121212;
+      --text-dark: #e0e0e0;
+      --highlight-dark: #66b2ff;
+      --card-bg-dark: #1e1e1e;
+    }
+
+    body.light {
+      background-color: var(--bg-light);
+      color: var(--text-light);
+    }
+
+    body.dark {
+      background-color: var(--bg-dark);
+      color: var(--text-dark);
+    }
+
+    /* Sections */
+    main {
+      margin-bottom: 70px; /* Space for bottom nav */
+    }
+
+    section {
+      display: none;
+      padding: 2rem;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: var(--highlight-light);
+    }
+
+    p {
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Profile Section */
+    #profile {
+      text-align: center;
+    }
+
+    #profile img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Skills Section */
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .skill {
+      padding: 1rem;
+      background-color: var(--card-bg-light);
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      flex: 1 1 150px;
+      max-width: 200px;
+      transition: transform 0.3s, background-color 0.3s;
+    }
+
+    body.dark .skill {
+      background-color: var(--card-bg-dark);
+    }
+
+    .skill:hover {
+      transform: translateY(-10px);
+      background-color: var(--highlight-light);
+      color: white;
+    }
+
+    /* Bottom Navigation */
+    nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: var(--card-bg-light);
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 0.5rem 0;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+
+    body.dark nav {
+      background-color: var(--card-bg-dark);
+    }
+
+    nav a {
+      text-decoration: none;
+      color: inherit;
+      text-align: center;
+      font-size: 0.9rem;
+      transition: color 0.3s;
+    }
+
+    nav a.active {
+      color: var(--highlight-light);
+    }
+
+    nav .material-icons {
+      font-size: 1.5rem;
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+
+    nav a:hover {
+      color: var(--highlight-light);
+    }
+  </style>
+</head>
+<body class="light">
+  <!-- Main Content -->
+  <main>
+    <!-- Profile Section -->
+    <section id="profile" class="active">
+      <img src="https://via.placeholder.com/150" alt="Profile Picture">
+      <h2>Badal Kumar</h2>
+      <p>Experienced Accountant & Digital Marketer</p>
+      <p>Bringing expertise in accounting, financial management, and technology to drive success and streamline business processes.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <div class="skill">Accounting (Tally, AWS)</div>
+        <div class="skill">Digital Marketing</div>
+        <div class="skill">Business Analysis</div>
+        <div class="skill">Financial Reporting</div>
+        <div class="skill">Time Management</div>
+        <div class="skill">Leadership</div>
+        <div class="skill">Cloud Computing</div>
+         <div class="skill">Web App Development</div>
+        <div class="skill">AI & Prompt Engineering</div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+      <h2>Experience</h2>
+      <p><strong>Accountant</strong> - Shri Hari Plywood & Hardware (May 2024 - Oct 2024)</p>
+      <p>Managed accounts, improved financial tracking, and ensured accurate billing and ledger maintenance.</p>
+
+      <p><strong>Digital Marketer & Website Manager</strong> - Future Skills Blog (Sept 2022 - Nov 2023)</p>
+      <p>Executed digital marketing campaigns, managed websites, and increased ROI through content marketing strategies.</p>
+
+      <p><strong>Digital Marketing Intern</strong> - Marpu Foundation (Dec 2024 - Present)</p>
+      <p>Developed impactful campaigns to boost awareness for the foundation’s initiatives.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <p><strong>Roovia:</strong> An app integrating multiple platforms to solve real-world problems.</p>
+      <p><strong>Content & Social Media Marketing:</strong> Achieved high engagement and ROI in digital campaigns.</p>
+      <p><strong>Business Development:</strong> Focused on client relationships and expanding market reach.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p><strong>Email:</strong> theparallelbk@gmail.com</p>
+      <p><strong>Phone:</strong> +91 9798114322</p>
+      <p><strong>Location:</strong> 140 Tetulmari, Sijua, Dhanbad, Pin - 828121</p>
+    </section>
+  </main>
+
+  <!-- Bottom Navigation -->
+  <nav>
+    <a href="#profile" data-section="profile" class="active">
+      <span class="material-icons">person</span>
+      Profile
+    </a>
+    <a href="#skills" data-section="skills">
+      <span class="material-icons">build</span>
+      Skills
+    </a>
+    <a href="#experience" data-section="experience">
+      <span class="material-icons">work</span>
+      Experience
+    </a>
+    <a href="#projects" data-section="projects">
+      <span class="material-icons">lightbulb</span>
+      Projects
+    </a>
+    <a href="#contact" data-section="contact">
+      <span class="material-icons">mail</span>
+      Contact
+    </a>
+  </nav>
+
+  <script>
+    // Handle Bottom Navigation
+    const navLinks = document.querySelectorAll('nav a');
+    const sections = document.querySelectorAll('section');
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const target = link.dataset.section;
+
+        sections.forEach(section => {
+          section.classList.remove('active');
+          if (section.id === target) {
+            section.classList.add('active');
+          }
+        });
+
+        navLinks.forEach(nav => nav.classList.remove('active'));
+        link.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
